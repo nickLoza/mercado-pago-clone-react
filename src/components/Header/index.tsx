@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { menuItems } from "../constants/menuItems";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiFillGithub } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { BsShop } from "react-icons/bs";
 import { MdOutlineLogout } from "react-icons/md";
@@ -103,6 +104,12 @@ function Header() {
                 <MdOutlineLogout />
                 <span className="ml-3 text-sm font-base">Salir</span>
               </button>
+            </li>
+            <li className="flex pl-6 hover:bg-[#E5E5E5] min-h-[46px] text-[#7E7E7E] text-2xl cursor-pointer active:text-[#44B3E4]">
+              <a className="flex items-center" href="https://github.com/nickLoza/mercado-pago-clone-react" target="_blank">
+                <AiFillGithub/>
+                <span className="ml-3 text-sm font-base">Repository</span>
+              </a>
             </li>
           </ul>
         </aside>
