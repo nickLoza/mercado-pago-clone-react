@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-mp{
+	background-color: #009EE3;
+}
+
+.color-mp{
+	color: #009EE3;
+}
+
+body{
+	background-color: #EDEDED;
+}
+
+.prevent-copy {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
