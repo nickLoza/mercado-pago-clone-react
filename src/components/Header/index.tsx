@@ -36,20 +36,25 @@ function Header() {
   }
 
   return (
-    <header className="bg-mp h-[60px]">
+    <header className="bg-mp h-[60px] text-white">
       <nav className="flex h-full items-center justify-between px-7 text-white">
         <div className="flex items-center font-bold">
-          <button className="text-xl mr-4 lg:hidden" onClick={handleOnClickToggle}>
+          <button 
+            className="text-xl mr-4 lg:hidden" 
+            onClick={handleOnClickToggle}
+            aria-label="Toggle Navigation Menu">
             <GiHamburgerMenu />
           </button>
           <h1 className="lg:ml-[265px]">{pageTitle}</h1>
         </div>
-        <button className="text-3xl">
+        <button 
+          className="text-3xl"
+          aria-label="Toggle Notifications View">
           <IoMdNotificationsOutline />
         </button>
         <aside
           ref={asideRef}
-          className={`fixed z-750 flex flex-col left-0 top-0 w-[256px] h-full bg-[#EEEEEE] text-black transition duration-300 ease-in-out transform ${
+          className={`fixed z-1000 flex flex-col left-0 top-0 w-[256px] h-full bg-[#EEEEEE] text-black transition duration-300 ease-in-out transform ${
             toggle ? "translate-x-0" : "-translate-x-full"
           } lg:transform-none lg:translate-x-0`}
         >
