@@ -84,7 +84,7 @@ function Home() {
 				</div>
 			</div>
 			{/*carrousel*/}
-			<div className="m-auto lg:m-0 w-[470px] lg:w-[370px] h-[245px]  my-4 ">
+			<div className="m-auto lg:m-0 lg:w-[370px] h-[245px]  my-4 ">
 					<p className="text-lg font-semibold mb-4">Descubrí más</p>
 					<div className="flex justify-between bg-white rounded-md p-4 pb-0 shadow-md">
 						<div className="text-[#009EE3]">
@@ -98,7 +98,7 @@ function Home() {
 						<img src={discover1} alt="people" width={175} height={175}/>
 					</div>
 			</div>
-			<div className="m-auto lg:mx-0 flex justify-center flex-col w-[470px] lg:w-[370px] h-[120px] bg-white text-sm mb-4 rounded-md shadow-md">
+			<div className="m-auto lg:mx-0 flex justify-center flex-col lg:w-[370px] h-[120px] bg-white text-sm mb-4 rounded-md shadow-md">
 				<button className="max-h-[50px] flex items-center text-left border-b-[1px] px-4 py-4 transition duration-150 hover:bg-[#eee] ">
 					<AiOutlineGift className="text-[#009EE3] text-xl mr-4"/> !Recomendá Point y ganá hasta $2.500¡
 				</button>
@@ -107,7 +107,7 @@ function Home() {
 				</button>
 			</div>
 
-			<div className="m-auto lg:m-0 flex flex-col w-[470px] lg:w-[370px] mb-8 pb-6">
+			<div className="m-auto lg:m-0 flex flex-col lg:w-[370px] mb-8 pb-6">
 				<button className="flex items-center text-left py-6 px-3 rounded-md bg-white shadow-md">
 					<LuNewspaper className="text-[#009EE3] text-xl"/> 
 					<span className="ml-4 text-sm">

@@ -40,12 +40,12 @@ function Header() {
       <nav className="flex h-full items-center justify-between px-7 text-white">
         <div className="flex items-center font-bold">
           <button 
-            className="text-xl mr-4 lg:hidden" 
+            className="text-xl mr-4 xl:hidden" 
             onClick={handleOnClickToggle}
             aria-label="Toggle Navigation Menu">
             <GiHamburgerMenu />
           </button>
-          <h1 className="lg:ml-[265px]">{pageTitle}</h1>
+          <h1 className="xl:ml-[265px]">{pageTitle}</h1>
         </div>
         <button 
           className="text-3xl"
@@ -56,7 +56,7 @@ function Header() {
           ref={asideRef}
           className={`fixed z-1000 flex flex-col left-0 top-0 w-[256px] h-full bg-[#EEEEEE] text-black transition duration-300 ease-in-out transform ${
             toggle ? "translate-x-0" : "-translate-x-full"
-          } lg:transform-none lg:translate-x-0`}
+          } xl:transform-none xl:translate-x-0`}
         >
           <div className="flex items-center justify-center h-[60px]  text-white bg-[#008AD6]">
             <div className="text-white text-4xl border-2 border-blue-300 rounded-full">
@@ -120,10 +120,10 @@ function Header() {
         </aside>
       </nav>
       <div
-        className={`lg:hidden transition duration-300 ease-in-out ${
+        className={`xl:hidden transition duration-300 ease-in-out ${
           toggle ? "bg-gray-800 opacity-40 translate-x-[256px]" : "opacity-100 translate-x-0"
         } fixed inset-0 z-500 pointer-events-none ${
-          window.innerWidth < 1024 ? "block" : "hidden"
+          window.innerWidth < 1280 ? "block" : "hidden"
         }`}
         onClick={() => setToggle(false)}
       />
